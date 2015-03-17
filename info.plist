@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>seanmcgrath_lrsearch</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>9CE52EFC-0475-4A50-8132-29ADE938F4C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6FC01CA-C200-4788-8DC0-9646129649F1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Sean McGrath</string>
+	<key>description</key>
+	<string>Search Alfred's default search scope for Lightroom Catalogs</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Search Lightroom Catalogs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>E6FC01CA-C200-4788-8DC0-9646129649F1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>lr</string>
+				<key>scopes</key>
+				<array/>
+				<key>title</key>
+				<string>Search for Lightroom projects</string>
+				<key>types</key>
+				<array>
+					<string>dyn.ah62d4rv4ge8026xdqf4a</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>9CE52EFC-0475-4A50-8132-29ADE938F4C4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Search Lightroom Catalogs
+=========================
+
+** How To Use **
+
+- Type ‘lr’, hit the spacebar and then start searching for a text in a Lightroom catalog name.
+
+Example: ‘lr Mike’ (Will find any LR catalog with ‘Mike’ in the filename)
+
+** Where does it look for catalogs? **
+
+This workflow uses Alfred’s default search scope which can be configured in the preferences under: Features &gt; Default Results &gt; Search Scope.
+
+—
+
+Created by: Sean McGrath (http://www.seanmcgrath.me/)</string>
+	<key>uidata</key>
+	<dict>
+		<key>9CE52EFC-0475-4A50-8132-29ADE938F4C4</key>
+		<dict>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>E6FC01CA-C200-4788-8DC0-9646129649F1</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://www.seanmcgrath.me/</string>
+</dict>
+</plist>
